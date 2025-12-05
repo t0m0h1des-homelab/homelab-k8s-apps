@@ -2,5 +2,7 @@ app:
   ingress:
     enabled: true
     hosts:
-      - k8s.local
+      - dashboard.local
     ingressClassName: nginx
+    annotations:
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"

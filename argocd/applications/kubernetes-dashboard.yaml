@@ -16,6 +16,12 @@ spec:
     - repoURL: 'https://github.com/t0m0h1des-homelab/homelab-k8s-apps.git'
       targetRevision: HEAD
       ref: values-repo
+
+    - repoURL: 'https://github.com/t0m0h1des-homelab/homelab-k8s-apps.git'
+      targetRevision: HEAD
+      path: apps/kubernetes-dashboard/manifests
+      directory:
+        recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: kubernetes-dashboard
