@@ -1,0 +1,6 @@
+app:
+  ingress:
+    enabled: true
+    hosts:
+      - k8s.local
+    ingressClassName: nginx
